@@ -1,0 +1,27 @@
+opzet HTML
+V- <nav> met radiobuttons
+V- <main> als container voor de films
+V- <ul> met <li> per film
+V- <header> en <footer> (optioneel)
+
+javascript
+V- lijst met movies + script pagina maken (de ene gebruikt de andere, dus volgorde matters)
+V- log de films naar console.log
+V- maak addMoviesToDom, met 1 argument
+
+filteren
+V- maak eventlisteners aan de radiobuttons, gebruik de array methods
+V- maak functie addEventListeners()
+
+doorlinken
+V- maak van poster een link naar de juiste IMDB pagina
+V- ook bij de selecties doorvoeren
+
+V- check eventlisteners, moeten deze change worden ipc click ?
+
+- media formaat aanpassingen
+V- css constante kleuren toevoegen
+
+
+Bonus
+- selectie op titel via inputveld

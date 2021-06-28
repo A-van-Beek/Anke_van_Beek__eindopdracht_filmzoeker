@@ -1,0 +1,72 @@
+@import "./constants.scss";
+
+* {
+  ///* kleinste scherm: geel */
+  font: arial;
+  font-size: 18px;
+  background-color: $blue-ice;
+  display: grit;
+  grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px;
+  grid-template-rows: 20px 20px auto 20px;
+  grid-template-areas:
+    ". header header header header ."
+    ". menu menu menu menu ."
+    ". main main main main ."
+    ". footer footer footer footer .";
+  justify-items: flex-start;
+}
+
+body {
+  margin: 10;
+  // border: 5px solid blue;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: purple;
+}
+
+header {
+  // border: 5px solid black;
+  grid-area: header;
+}
+
+menu {
+  // border: 5px solid purple;
+  grid-area: menu;
+  justify-self: flex-start;
+}
+
+.films {
+  //container voor de films
+  // border: 5px solid orange;
+  grid-area: main;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex;
+  flex-wrap: wrap;
+}
+
+.tile {
+  //de films
+  list-style: none;
+  border: 3px solid red;
+  border-radius: 10px; // afronding van de border
+  box-shadow: 10px 10px 20px black;
+  margin: 15px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+footer {
+  font-size: 75%;
+  // border: 2px solid green;
+  grid-area: footer;
+}

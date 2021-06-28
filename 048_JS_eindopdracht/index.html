@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <!-- koppeling met de styles.scss -->
+  <!-- let op, wel Watch aanzetten -->
+  <script defer type="text/javascript" src="_database.js"></script>
+  <script defer type="text/javascript" src="script.js"></script>
+  <!-- deze geeft aan dat eerst de HTML geladen wordt, daarna pas Javascript oproepen -->
+  <!-- let op: main-javascript file als laatste -->
+  <title>Eindopdracht 3 - JavaScript</title>
+  <!-- onder water titel -->
+</head>
+
+<body>
+  <header>
+    <h1>Welkom bij mijn filmzoeker</h1>
+  </header>
+  <menu>
+    <ul>
+      <input type="radio" id="reset" name="reset" value="reset" /><label for="reset">Reset selectie, toon alles</label>
+      <input type="radio" id="recent" name="recent" value="recent" /><label for="recent">Laatste films, 2014 of
+        nieuwer</label>
+      <input type="radio" id="avenger" name="avenger" value="avenger" /><label for="avenger">Avenger films</label>
+      <input type="radio" id="x-men" name="x-men" value="x-men" /><label for="x-men">X-men films</label>
+      <input type="radio" id="princess" name="princess" value="princess" /><label for="princess">Princess films</label>
+      <input type="radio" id="batman" name="batman" value="batman" /><label for="batman">Batman films</label>
+    </ul>
+  </menu>
+  <main>
+    <div id="select"></div>
+    <ul id="movies" class="films">
+    </ul>
+  </main>
+  <footer>copyright: je-weet-wel-wie</footer>
+</body>
+
+</html>
